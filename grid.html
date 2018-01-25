@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GridCSS</title>
+    <!--
+   *  grid-template-columns: 25% 1fr = 1fr le dices que ocuara lo q sobre
+   *  grid-template-columns: repeat(5,100px);
+   *  repeat(auto-fit,minmax(120px,1fr)) = mediaquery, se autoajusta/calcula a 120px x cada elem
+   -->
+    <style>
+       
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 100px);  
+            grid-template-rows: repeat(4,100px);
+            
+            grid-auto-rows: 100px;
+         grid-auto-columns: 200px;  /*como le definimos 6 col a partir d la 7ma hace efecto esto!*/ 
+            
+            grid-gap: 10px; /*espaciado d todos los bordes*/
+            
+            grid-auto-flow: row dense ; /* = justify-content: row o column 
+            dense =  a llenar los huecos!
+            */
+        }
+    
+        .item {
+            font-size: 1em;
+            background: yellow;
+            
+             display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        
+         /*Grid implicito porq no hay linea 7 y mucho menos 10   */
+        .item:nth-child(5){
+            grid-row: span 3;
+             grid-column: span 3; 
+          }
+         .item:nth-child(14){
+            grid-row: span 3;
+             grid-column: span 4; 
+          }
+        .item:nth-child(7){
+            grid-row: span 2;
+             grid-column: span 3; 
+          }
+     
+         .item:nth-child(even) {
+             background: pink; 
+            }
+     </style>
+</head>
+<body>
+     <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+        <div class="item">16</div>
+        <div class="item">17</div>
+        <div class="item">18</div>
+        <div class="item">19</div>
+        <div class="item">20</div>
+        <div class="item">21</div>
+        <div class="item">22</div>
+        <div class="item">23</div>
+        <div class="item">24</div>
+        
+    </div>
+</body>
+</html>

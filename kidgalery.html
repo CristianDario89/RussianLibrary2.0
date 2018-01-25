@@ -11,8 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet"> 
         <link rel="stylesheet" href="css/estilos2.css">
 
-        <style>
-            
+        <style>           
 .h1-index{
       color: transparent;
     background: -webkit-linear-gradient(left,#ff2d2d,#003de2,#02ce58);
@@ -24,9 +23,78 @@
 .text1{
     letter-spacing: 1px;
     font-size: 25px;
-    font-family: 'Manuale', serif;
-     
+    font-family: 'Manuale', serif;  
 }
+            
+               .container-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 200px);  
+            grid-template-rows: repeat(4,200px);
+            
+            grid-auto-rows: 100px;
+         grid-auto-columns: 200px;  /*como le definimos 6 col a partir d la 7ma hace efecto esto!*/ 
+            
+            grid-gap: 10px; /*espaciado d todos los bordes*/
+            
+            grid-auto-flow: row dense ; /* = justify-content: row o column 
+            dense =  a llenar los huecos!
+            */ 
+           margin-left: 100px;  
+          margin-bottom: 25px;        
+               
+        }
+    
+        .item {
+            font-size: 1em;
+            background: blue;
+            
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            
+           border: 8px double black;
+          }
+        
+         /*Grid implicito porq no hay linea 7 y mucho menos 10   */
+        .item:nth-child(5){
+            grid-row: span 3;
+             grid-column: span 3; 
+          }
+         
+        .item:nth-child(7){
+            grid-row: span 2;
+             grid-column: span 3; 
+          }
+            
+            .item:nth-child(10){
+            
+             grid-column: span 2 
+          }
+            
+     .item:nth-child(11), .item:nth-child(12){
+            grid-row: span 3; 
+          }
+            
+        .item:nth-child(13){
+            grid-row: span 3; 
+            grid-column: span 4;
+          }
+            
+            .item:nth-child(14),  .item:nth-child(15){
+            grid-row: span 3; 
+            grid-column: span 3;
+                
+          } 
+            
+         .item:nth-child(even) {
+             background: red; 
+            }
+            
+            .item img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
         </style>
         
     </head>
@@ -86,6 +154,7 @@
         </div>
         <!--fin Slider-->
  
+       <!--MAIN-->
         <div class="container-fluid bg-fondo-claro">
 
                <h2 class="h1 text-center pt-3 text-primary"><strong>Kids books</strong></h2><hr>
@@ -148,9 +217,39 @@
 
                 </div>
 
-            </div>
-
+            </div><br>
+        <!--fin MAIN-->
      
+       <!--GRID-->
+ 
+     <div class="container-grid">
+        <div class="item"><img src="img/grid/z1.png" alt="" ></div>
+        <div class="item"><img src="img/grid/z3.png" alt="" ></div>
+          <div class="item"><img src="img/grid/z2.png" alt="" ></div>
+        <div class="item"><img src="img/grid/z4.png" alt="" ></div>
+        <div class="item"><img src="img/grid/mismo1.png" alt="" ></div>
+        <div class="item"><img src="img/grid/z6.png" alt="" ></div>
+         <div class="item"><img src="img/grid/mismo4.png" alt="" ></div>
+         <div class="item"><img src="img/grid/z5.png" alt="" ></div>
+        <div class="item"><img src="img/grid/mismo3.png" alt="" ></div>
+        
+         <div class="item"><img src="img/grid/mismo5.png" alt="" ></div>
+         
+         <div class="item"><img src="img/grid/z8.png" alt="" ></div>
+         <div class="item"><img src="img/grid/z7.png" alt="" ></div>
+         
+         <div class="item"><img src="img/grid/z11.png" alt="" ></div>
+      
+          <div class="item"><img src="img/grid/z9.png" alt="" ></div>
+        
+        
+       
+         <div class="item"><img src="img/grid/mismo2.png" alt="" ></div>
+     </div>
+      
+       <!--Fin GRID -->
+       
+       
         <!--Banner-->
         <div class="container-fluid py-5 bg-danger text-center text-white">
             <div class="py-4">
@@ -168,7 +267,6 @@
         <!--FIIIIIIIIIN  Banner-->
  
         <!--Form-->
-
         <div class="container py-5 bg-fondo-claro">
             <div class="text-center">
                 <h2 >Contáctanos</h2>

@@ -36,6 +36,8 @@ and open the template in the editor.
     font-family: 'Manuale', serif;
      
 }
+       /*-----------------------------------------------*/
+     
        
         .container-grid2 {
             margin-left: 2px;
@@ -50,6 +52,31 @@ and open the template in the editor.
             grid-gap: 6px;
          }
         
+            
+       
+        @media (max-width: 900px) {
+                .container-grid2{
+                     width: 100%; 
+                     grid-template-columns: repeat(1, 80px);  
+                    grid-template-rows: repeat(1,180px);
+
+                             grid-auto-flow: column ;
+                            grid-gap: 16px;
+                    
+                    grid-auto-rows: 200px;
+                 grid-auto-columns: 60px; 
+                    
+                   margin-left: 3px;
+                   
+              }
+                .container-grid2  section {
+                     border: 2px solid black;
+                    box-shadow: 2px 2px 2px grey;
+                    
+                }  
+                
+        } 
+       
         section{display: flex; justify-content: center; align-items: center;  
        grid-gap: 2px;
         }
@@ -60,7 +87,6 @@ and open the template in the editor.
                display: block;
               
         }
-         
         
         #grid-2 {
              background-color: black;
@@ -68,7 +94,8 @@ and open the template in the editor.
              height: 100%;
             
             grid-template-columns: repeat(2, 1fr);
-             border: 2px solid black;
+           
+            
              }
         
          #grid-2  > div{
@@ -90,7 +117,6 @@ and open the template in the editor.
             height: 100%;
             
         }
-       
        
        /*grid 2*/
        
@@ -301,7 +327,7 @@ and open the template in the editor.
        </section>
        
     </div>     <br>
-      <a href="#" class="btn btn-danger px-5 ml-5">Click here to see the complete list.</a>     <br><br><br>
+      <a href="#" class="btn btn-danger px-5 ml-5 celu">Click here to see the complete list.</a>     <br><br><br>
        
        
        <div class="container"> <h2 class="h1 text-center py-3 cuadroKids my-4">Action / Historic</h2></div>

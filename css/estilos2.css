@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Manuale:400,500');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
-body{font-family: 'Roboto', sans-serif; 
-}
+body{font-family: 'Roboto', sans-serif;  }
 
 
 /*TIPOGRAFIAS*/
@@ -42,6 +41,7 @@ p{font-weight: 300;}
             height: 80vh;
             background-position: center;
             background-size: cover;
+    background-attachment: fixed;
          }
 .fondo-2{
     background-color: rgba(0,0,0,.5);
@@ -143,7 +143,7 @@ h1 .link-ppal{
 
 /*2018*/
 .cuadro{ 
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.2);
     border-radius: 20px;
      
       box-shadow: -1px -10px 10px 2px rgba(255,0,0,1),

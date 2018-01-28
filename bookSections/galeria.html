@@ -16,7 +16,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="../css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet"> 
         <link rel="stylesheet" href="../css/estilos2.css">
-        
+         <link rel="stylesheet" href="../css/GRIDs.css">
          
     <script src="../JQuery/jquery-3.2.1.min.js"></script>
        <script src="../js/actions.js"></script>
@@ -36,6 +36,97 @@ and open the template in the editor.
     font-family: 'Manuale', serif;
      
 }
+       
+        .container-grid2 {
+            margin-left: 2px;
+            width: 100vh;  
+            display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax( 118px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+        
+            grid-auto-rows: minmax(150px, 1fr);
+            grid-auto-columns: minmax(118px, 1fr);
+            grid-auto-flow: column dense;
+            grid-gap: 6px;
+         }
+        
+        section{display: flex; justify-content: center; align-items: center;  
+       grid-gap: 2px;
+        }
+        
+          section:nth-child(1), section:nth-child(2), section:nth-child(3),section:nth-child(4) {
+             grid-column-end: span 3;
+              grid-row-end: span 2;
+               display: block;
+              
+        }
+         
+        
+        #grid-2 {
+             background-color: black;
+            display: grid;
+             height: 100%;
+            
+            grid-template-columns: repeat(2, 1fr);
+             border: 2px solid black;
+             }
+        
+         #grid-2  > div{
+              color: white;
+             height: 100%;
+               
+             display: flex;
+             justify-content: center;
+             align-items: center;
+          }
+        
+        .a{
+            grid-row: span 2;
+            background-color: aqua;
+        }
+        
+        #grid-2 img{
+            width: 100%;
+            height: 100%;
+            
+        }
+       
+       
+       /*grid 2*/
+       
+        .container-grid3 {
+            
+            width: 100%; 
+            
+            display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax( 180px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+         
+            grid-auto-flow: row;
+             grid-gap: 5px;
+            
+              grid-auto-rows: minmax(150px, 1fr);
+            grid-auto-columns: minmax(150px, 1fr);
+            
+          
+         }
+       
+       .container-grid3   div {
+             border: 5px double black;
+          display: flex; justify-content: center; align-items: center;  
+       
+       }
+       
+         .container-grid3 img{
+            width: 100%;
+            height: 100%;
+            
+        }
+       
+     .container-grid3  div:nth-child(10), div:nth-child(11),  div:nth-child(12),div:nth-child(9) {
+             grid-column-end: span 2;
+                
+        }
         </style>
     </head>
     <body>
@@ -91,7 +182,10 @@ and open the template in the editor.
         <!--fin Slider-->
  
         <!--main-->
-         <h2 class="h1 text-center pt-4">Books Galery</h2>
+         <h1 class="h1 text-center my-5 py-4 bg-danger text-primary"><strong>Books Galery</strong></h1>
+           
+        <div class="container">   <h2 class="h1 text-center py-3 cuadroKids my-4">the most read books</h2></div>
+            
             <div class="container-fluid bg-primary">
             
       
@@ -166,18 +260,80 @@ and open the template in the editor.
                
      </div>
          
-     </div>
-     
-     
+     </div><br>
+     <a href="#" class="btn btn-danger px-5 ml-5">Click here to see the complete list.</a>     <br><br><br>
      <!--Fin MAIN-->
 
-       <!--Fin MAIN-->
-
-
+  
+  <!--GRID 1-->
+        <div class="container"> <h2 class="h1 text-center py-3 cuadroKids my-4">Terror, suspense</h2></div>
+   <div class="container-grid2 ">
+      
+       <section>
+            <section id="grid-2">
+                       <div class="a"><img src="../img/3/nuestrorio1.png" alt="" ></div>
+                       <div><img src="../img/3/nuestrorio2.png" alt="" ></div>
+                       <div><img src="../img/3/nuestrorio3.png" alt="" ></div>
+              </section>
+         </section>
+         
+       <section> 
+          <section id="grid-2">
+                       <div class="a"><img src="../img/3/tuamugo3.png" alt="" ></div>
+                       <div><img src="../img/3/tuamugo2.png" alt="" ></div>
+                       <div><img src="../img/3/tuamugo1.png" alt="" ></div>
+              </section>
+       </section>
+       
+        <section>
+           <section id="grid-2">
+                       <div class="a"><img src="../img/3/autores2.jpg" alt="" ></div>
+                       <div><img src="../img/3/autores1.jpg" alt="" ></div>
+                       <div><img src="../img/3/autores.jpg" alt="" ></div>
+              </section>
+       </section>
+         <section>
+           <section id="grid-2">
+                       <div class="a"><img src="../img/3/greorgiy1.jpg" alt="" ></div>
+                       <div><img src="../img/3/greorgiy2.jpg" alt="" ></div>
+                       <div><img src="../img/3/greorgiy3.jpg" alt="" ></div>
+              </section>
+       </section>
+       
+    </div>     <br>
+      <a href="#" class="btn btn-danger px-5 ml-5">Click here to see the complete list.</a>     <br><br><br>
+       
+       
+       <div class="container"> <h2 class="h1 text-center py-3 cuadroKids my-4">Action / Historic</h2></div>
+         
+       
+       
+        <!--GRID 2-->
+  <div class="container-grid3 mb-4">
+         <div><img src="../img/2/1.jpg" alt="" ></div>
+       <div><img src="../img/2/2.jpg" alt="" ></div>
+       
+       <div><img src="../img/2/4.jpg" alt="" ></div>
+       <div><img src="../img/2/5.jpg" alt="" ></div>
+       <div><img src="../img/2/12.jpg" alt="" ></div>
+       <div><img src="../img/2/13.jpg" alt="" ></div>
+       <div><img src="../img/1.jpg" alt="" ></div>
+       <div><img src="../img/nikolai.jpg" alt="" ></div>
+          
+       <div><img src="../img/autores.jpg" alt="" ></div>
+         <div><img src="../img/3/22.jpg" alt="" ></div>
+       <div><img src="../img/3/zz.jpg" alt="" ></div>
+       <div><img src="../img/grid/z3.png" alt="" ></div>
+       
+</div>
+       
+        <a href="#" class="btn btn-danger px-5 ml-5">Click here to see the complete list.</a> <hr>    <br><br> <br>    
+              
+       
         <!--Banner-->
-        <div class="container-fluid py-5 bg-danger text-center text-white">
+       <div class="container-fluid py-5 bg-danger text-center text-white fondobanner">
             <div class="py-4">
-                <h2>Mira q facil es usar fon AWESOME</h2>
+                 <h2 class="h1"><Strong>Look how easy is to get in touch with me</Strong></h2>
                 <div class="iconos pt-4">
                     <i class="fa fa-meetup  pr-3" aria-hidden="true"></i>
                     <i class="fa fa-user-o pr-3" aria-hidden="true"></i>
@@ -195,8 +351,8 @@ and open the template in the editor.
 
         <div class="container py-5 bg-primary" id="contact">
             <div class="text-center">
-                <h2 >Contáctanos</h2>
-                <h5 class="py-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dese e, tenetur aliquid et sed sequi magni.</h5>
+                <h2>Register here</h2>
+                <h5 class="py-4">For further information just contact me.</h5>
             </div>
 
             <form action="#" class="row justify-content-center">
@@ -220,7 +376,7 @@ and open the template in the editor.
 
         <!--footer-->
         <footer class="container-fluid bg-inverse text-center text-white py-5">
-            <p>Sitio web desarrolado por Luisano Berrako Gallardo</p>
+            <p>Sitio web desarrolado por Cristian Dario<br><strong>https://github.com/CristianDario89</strong></p>
         </footer>
         <!--fib footer-->
 

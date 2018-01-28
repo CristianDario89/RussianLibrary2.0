@@ -46,13 +46,31 @@
             @media (max-width: 500px) {
                  .container-grid {
             
-            grid-template-columns: repeat(1, 30px);  
+            grid-template-columns: repeat(1, 40px);  
             grid-template-rows: repeat(1,200px);
             
+                     grid-auto-flow: row dense;
+                     grid-gap: 4px;
             grid-auto-rows: 100px;
-         grid-auto-columns: 200px;  /*como le definimos 6 col a partir d la 7ma hace efecto esto!*/ }
+         grid-auto-columns: 200px;  /*como le definimos 6 col a partir d la 7ma hace efecto esto!*/
+             margin-left: 1px;     
+                
+                }
+                
+               .container-grid  .chau{
+                 /*   display: none;*/
+             margin-right:  40px;
+                   
+                }
+                
+                .container-grid .item{
+                    border: 1px solid white;
+                    box-shadow: 2px 2px 
+                    
+                }
                 
             }
+            
         .item {
             font-size: 1em;
             background: blue;
@@ -103,6 +121,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+                
         }
         </style>
         
@@ -232,7 +251,7 @@
        <!--GRID-->
  
      <div class="container-grid">
-        <div class="item"><img src="img/grid/z1.png" alt="" ></div>
+        <div class="item chau"><img src="img/grid/z1.png" alt="" ></div>
         <div class="item"><img src="img/grid/z3.png" alt="" ></div>
           <div class="item"><img src="img/grid/z2.png" alt="" ></div>
         <div class="item"><img src="img/grid/z4.png" alt="" ></div>

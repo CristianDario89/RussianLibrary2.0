@@ -27,6 +27,18 @@
                 font-family: 'Manuale', serif;
 
             }
+            
+            @media (max-width: 767px){
+                .celu2{
+                border: 2px solid black;
+                    
+                }
+                
+                .celu2 > a {
+                  display: none;
+                }
+                
+            }
         </style>
         
         <script src="JQuery/jquery-3.2.1.min.js"></script>
@@ -61,20 +73,17 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto ">
-                        <li class="nav-item active">
-                            <a class="nav-link text-muted" href="#">Catalogo</a>
+                         <li class="nav-item">
+                            <a class="nav-link text-muted" href="bookSections/galeria.html">Galery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-muted" href="bookSections/galeria.html">Galeria</a>
+                            <a class="nav-link text-muted" href="#">Who I am</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-muted" href="#">Servicios</a>
+                            <a class="nav-link text-muted" href="#">My work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-muted" href="#">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="#">Contacto</a>
+                            <a class="nav-link text-muted" href="#">Contact</a>
                         </li>
                     </ul>
 
@@ -170,7 +179,7 @@
             
             <div class="row justify-content-between py-3">
 
-                <div class="col-sm-12 col-md-6 p-2 col-lg-3">
+                <div class="col-sm-12 col-md-6 p-2 col-lg-3 celu2">
                     <img src="img/ciudad.jpg" alt="" width="240" height="230">
                     <h3 class="mt-2">Tashkent - Ciudad lucrativo</h3> 
                     <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam sit, similique facere, atque aliquam ex.</p> 
@@ -178,7 +187,7 @@
                     <a href="#" class="btn btn-danger px-5 ml-4">Read more</a> 
                 </div>
 
-                <div class="col-sm-12 col-md-6 p-2 col-lg-3">
+                <div class="col-sm-12 col-md-6 p-2 col-lg-3 celu2">
                     <img src="img/2/11.jpg" alt="" width="240" height="230"> 
                     <h3 class="mt-2 ">Детская литература</h3>
                     <p>Рисунки Г. Дмитриевой
@@ -186,7 +195,7 @@
                     <a href="#" class="btn btn-danger px-5 ml-5">Read more</a>         
                 </div>
 
-                <div class="col-sm-12 col-md-6 p-2 col-lg-3">
+                <div class="col-sm-12 col-md-6 p-2 col-lg-3 celu2">
                     <img src="img/2/12.jpg" alt="" width="240" height="230">
                     <h3 class="mt-2">Новые приключения Пифа</h3>
                     <p>рисунки В.Сутеева
@@ -195,7 +204,7 @@
                     <a href="#" class="btn btn-danger px-5 ml-5">Read more</a>    
                 </div>
 
-                <div class="col-sm-12 col-md-6 p-2 col-lg-3">
+                <div class="col-sm-12 col-md-6 p-2 col-lg-3 celu2">
                     <img src="img/2/13.jpg" alt="" width="240" height="230">
                     <h3 class="mt-2 ">Едем, плаваем, летаем</h3>
                     <p>Виктор Фёдорович Авде́ев (1909—1983) — советский писатель. Лауреат Сталинской премии третьей степени (1948).</p><br><br>
@@ -207,9 +216,16 @@
         </div> <br> 
 
         <!--FIIIN seccion 2--> 
+        
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64069.941690908374!2d30.27868047084234!3d59.879266706058374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2sSan+Petersburgo%2C+Rusia!5e0!3m2!1ses-419!2sar!4v1516914610437" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-
-        <!--Banner-->
+         <!--Form-->
+   <div class="container ">
+           <script type="text/javascript" src="https://form.jotformz.com/jsform/80281729695670"></script>
+        </div>
+  <!--FIIIIIIIIIN  form-->
+        
+      <!--Banner-->
         <div class="container-fluid  py-5 text-center text-white fondobanner">
             <div class="py-4">
                 <h2 class="h1"><Strong>Look how easy is to get in touch with me</Strong></h2>
@@ -224,35 +240,7 @@
             </div>
         </div>
         <!--FIIIIIIIIIN  Banner-->
-
-        <!--Form-->
-
-        <div class="container py-5 bg-fondo-claro">
-            <div class="text-center">
-                <h2 >Contáctanos</h2>
-                <h5 class="py-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dese e, tenetur aliquid et sed sequi magni.</h5>
-            </div>
-
-            <form action="rtaindex.jsp" class="row justify-content-center " id="form_contacto">
-                <div class="form-group col-md-3">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control">
-                </div>
-                <div class="form-group col-md-3">
-                    <input type="email" name="email" id="email" placeholder="E-mail" class="form-control">
-                </div>
-                <div class="form-group col-md-3">
-                    <input type="text" placeholder="Teléfono" class="form-control">
-                </div>
-                <div class="col-md-12 py-4">
-                    <div class="row justify-content-center">
-                        <button class="btn btn-primary col-md-2" name="enviar">Enviar</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-  <!--FIIIIIIIIIN  form-->
-        
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64069.941690908374!2d30.27868047084234!3d59.879266706058374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2sSan+Petersburgo%2C+Rusia!5e0!3m2!1ses-419!2sar!4v1516914610437" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  
        
 
         <!--footer-->

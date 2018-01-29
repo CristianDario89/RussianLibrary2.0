@@ -165,4 +165,8 @@ h1 .link-ppal{
 .fondobanner{
     background-image: url(../img/fondos/4.jpg);
     background-size: cover;  
+    margin-bottom: 20px;
+}
+.form{
+    box-shadow: 0px 0px 40px blue, 0px 0px 80px rgba(256,256,256 ,1); 
 }

@@ -4,9 +4,11 @@
   position: absolute;
     top: 0px;
     right: 0;
-    bottom: 380px;
+    bottom: 372px;
     left: auto;
+     
     margin: auto;  
+     
 } /*fin centrado absoluto*/
 
 .mapa{

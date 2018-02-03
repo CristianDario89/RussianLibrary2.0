@@ -4,14 +4,14 @@
   position: absolute;
     top: 0px;
     right: 0;
-    bottom: 520px;
+    bottom: 400px;
     left: auto;
     margin: auto;  
 } /*fin centrado absoluto*/
 
 .mapa{
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
  background: url(../img/mapa.png);
     background-size: cover;
     

@@ -18,11 +18,11 @@
     background-size: cover;
     
     border-radius: 50%;
-    box-shadow: -30px -30px 0 0 rgba(0,0,0,.1) inset, 
+    box-shadow: -30px -20px 0 0 rgba(0,0,0,.1) inset, 
         -70px -30px 0 0 rgba(0,0,0,.1) inset,
         5px 5px 0 0 rgba(255,255,255,.2)inset;
     
-    -webkit-animation: tierra-girando 5s infinite linear; /*linear pa q gire permanentemente*/
+    -webkit-animation: tierra-girando 15s infinite linear; /*linear pa q gire permanentemente*/
     }
 
 @-webkit-keyframes tierra-girando{

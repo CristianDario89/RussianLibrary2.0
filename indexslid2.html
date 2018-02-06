@@ -48,7 +48,43 @@
                 }
                
             }
-             
+           
+            #c{list-style: none;}
+            #c li{float: left;width: 32%; text-align: justify;}
+            #cardfan{ margin: 30px 40px; }
+            #cardfan img{border: 15px solid blue;position: absolute;
+                transform-origin: center 800px;
+            transition: transform 1.2s cubic-bezier(0.730,-0.290,0.445,1.270), box-shadow .5s;
+            }
+            
+            #cardfan img:hover{z-index: 2; box-shadow: 12px 12px 18px red;} /*pondra una encima d la otra*/
+            #cardfan:hover img:first-child{ transform: rotate(15deg); }
+            #cardfan:hover img:last-child{ transform: rotate(-15deg); }
+            
+            /**/
+              *{
+            box-sizing: border-box;
+        }
+    
+        body{
+            margin: 0;
+            background: #F0F0F0;
+        }
+        
+                     .main2{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 5px;
+                         padding: 20px;
+        }
+        .main2 img{
+            display: block;
+            width: 100%;
+            height: 260px;
+            box-shadow: -1px 10px 0px rgba(0,0,0,0.06);
+            border: 3px solid 
+        }
+
         </style>
          
         <script src="JQuery/jquery-3.2.1.min.js"></script>
@@ -68,35 +104,92 @@
     </head>
 <body>
 <div>
-	<!----begin------Insert to your webpage where you want to display the slider-->
-        <div id='hislider1' style="max-width:100%;  max-height:460px; margin: 0 auto;">
-        	<ul style="display: none;overflow: hidden; height: 0; visibility: hidden; opacity: 0;">
-<li>
-<div>
-<img data-src="dataimages/1.jpg" data-thumb-src="dataimages/1-th.jpg" title="1" alt="sasasasa" data-content-type="image" data-content="" data-interval="-1"/>
- <div data-type="effect" data-effect-type="Random"></div>
-</div>
-</li>
-<li>
-<div>
-<img data-src="dataimages/2.jpg" data-thumb-src="dataimages/2-th.jpg" title="2" alt="sasa" data-content-type="image" data-content="" data-interval="-1"/>
- <div data-type="effect" data-effect-type="Random"></div>
-</div>
-</li>
-<li>
-<div>
-<img data-src="dataimages/3.jpg" data-thumb-src="dataimages/3-th.jpg" title="3" alt="sasasa" data-content-type="image" data-content="" data-interval="-1"/>
- <div data-type="effect" data-effect-type="Random"></div>
-</div>
-</li>
-</ul>
-        
-        	</div>
-        	<br>	
-        	<noscript>The slider is powered by <strong>Hi Slider</strong>, a easy jQuery image slider from <a target="_blank" href="hislider.com">hislider.com</a>. Please enable JavaScript to view.</noscript><div class="hi-about-text" style="display:none">This jQuery slider was created with the free <a style="color:#FFF;" href="http://hislider.com" target="_blank">Hi Slider</a> for WordPress plugin,Joomla & Drupal Module from hislider.com.<br /><br /><a style="color:#FFF;" href="#" class="hi-about-ok">OK</a></div><div class="hi-slider-watermark"  style="display:none"><a href="http://hislider.com" target="_blank">hislider.com</a></div>
-        </div>
-      <!----end------Insert to your webpage where you want to display the slider-->
    
+        <!--Navbar-->
+
+        <div class="container-fluid navbar-inverse fondo-nav fixed-top">
+
+
+            <nav class="navbar navbar-toggleable-md  container">
+                <button class="navbar-toggler navbar-toggler-right celu3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand text-muted text1" href="index.html">
+                    <img src="" width="30" height="30" class="d-inline-block  align-top mr-1" alt="">Majorova collections</a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto ">
+                         <li class="nav-item">
+                            <a class="nav-link text-muted" href="bookSections/galeria.html">Galery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">Who I am</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">My work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
+        <!--fin nav-->
+
+        <!--Slider-->
+        <div class="fondo">
+            <div class="container-fluid fondo-2">
+                <div class="container d-flex flex-column justify-content-center h-100 text-white align-items-center ">
+                    <h1 class="pb-25 h1-index">The Ljuba's library</h1>
+                    <h2 class="display-5 celu6">Советская детская книга /Children`s literature</h2>
+                    <p class="pb-25 text-center celu3">Мир советского ребенка вопреки идеологическим установкам был наполнен множеством красочных и ярких впечатлений, созданных благодаря талантливым писателям и иллюстраторам.</p>
+                    <div>
+                        <a href="#" class="btn btn-danger px-5 celu3">Leer más</a>
+                    </div>    
+                </div> 
+            </div>
+        </div>
+        <!--fin Slider-->
+	   <main class="main2">
+        <img src="img/2/1.jpg" alt="">
+         <img src="img/2/11.jpg" alt="">
+          <img src="img/2/12.jpg" alt="">
+           <img src="img/2/13.jpg" alt="">
+            <img src="img/2/1b.jpg" alt="">
+         <img src="img/2/1c.jpg" alt="">
+          <img src="img/2/2.jpg" alt="">
+           <img src="img/2/3.jpg" alt="">
+            <img src="img/2/4.jpg" alt="">
+         <img src="img/2/5.jpg" alt="">
+          <img src="img/2/6.jpg" alt="">
+           <img src="img/2/palle.jpg" alt="">
+            <img src="img/2/1.jpg" alt="">
+         <img src="img/2/11.jpg" alt="">
+          <img src="img/2/13.jpg" alt="">
+           <img src="img/2/1c.jpg" alt="">
+    </main>
+   
+    <div class="container ">
+	     <ul id="c">
+	         <li><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, error. Saepe quos voluptate consequatur enim odio amet placeat accusantium dicta ex, fugiat reiciendis dolor, blanditiis nihil dolores debitis ducimus pariatur!</div>
+	         <div>A officiis in maxime minima voluptate incidunt labore quis quaerat dolor eum tenetur facere sed nobis, vero voluptatibus fugit natus distinctio eligendi omnis dicta veritatis! Laboriosam maiores molestias nobis ducimus!</div>
+	         <div>Nostrum mollitia soluta laudantium eligendi voluptatem aperiam quos ducimus itaque, sunt iure odio et fugit cum, impedit deserunt, nam nisi iste excepturi repudiandae minus modi adipisci necessitatibus ratione voluptatum! Excepturi.</div></li>
+	         <li><div id="cardfan">
+	             <img src="img/1.jpg" alt="" width="270px" height="300px">
+	             <img src="img/2.jpg" alt="" width="270px" height="300px">
+	             <img src="img/4.jpg" alt="" width="270px" height="300px">
+	         </div></li>
+	         <li>
+	             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, facere animi possimus voluptas enim voluptate maxime qui sit vero dicta quod sapiente veniam inventore voluptates libero! Distinctio vel laboriosam pariatur!</div>
+	             <div>Aliquid consectetur animi quia dolorum dolores totam quod, atque perferendis distinctio ab! Hic et eaque atque esse delectus nostrum, distinctio, neque ea doloribus molestias adipisci consectetur aliquam suscipit quo provident.</div>
+	             <div>Architecto officia omnis, commodi ab nesciunt. Dolor omnis pariatur ratione debitis modi impedit beatae fugiat deserunt, ipsam facere velit praesentium a atque distinctio, quas. Rem sint ut labore quos quaerat?</div>
+	         </li>
+	     </ul>
+	 </div>
+	 <br>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64069.941690908374!2d30.27868047084234!3d59.879266706058374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2sSan+Petersburgo%2C+Rusia!5e0!3m2!1ses-419!2sar!4v1516914610437" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
          <!--Form-->

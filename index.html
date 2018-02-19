@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet"> 
         <link rel="stylesheet" href="css/estilos2.css">
      <link rel="stylesheet" href="css/planeta.css">
+       
         <style>
 
             .h1-index{
@@ -19,6 +20,8 @@
                 -webkit-background-clip: text;
                 font-weight: bold;
                 letter-spacing: 0.9px;
+              margin-top: 80px;
+                font-size: 30px;
             }
 
             .text1{
@@ -61,26 +64,19 @@
                     font-size: 24px;
                 }
                 
-                .celu3{
-                    display: none;
-                }
-                .celu6{
-                    margin-top: 290px;
-                }
-               
-                
+                  
                 .mapa{
   position: absolute;
     top: 0px;
     right: 0;
-    bottom: 450px;
+    bottom: 395px;
     left: 0;
     margin: auto;  
 } /*fin centrado absoluto*/
 
 .mapa{
-    width: 61px;
-    height: 61px;
+    width: 81px;
+    height: 81px;
  background: url(img/mapa.png);
     background-size: cover;
     
@@ -94,12 +90,11 @@
     }
             
             /**/
-            .mapa p{
-                margin-top: 140px;
-                color: azure;text-align: center;
-                text-decoration: none;
-                padding: 10px;
-                
+            .mapa h4{
+              font-size: 14px;
+                margin-top: 22px;
+                text-align: center;
+                cursor: pointer;
             }
         </style>
         
@@ -162,9 +157,9 @@
         <div class="fondo">
             <div class="container-fluid fondo-2">
                 <div class="container d-flex flex-column justify-content-center h-100 text-white align-items-center ">
-                    <h1 class="pb-25 h1-index">The Ljuba's library</h1>
-                    <h2 class="display-5 celu6">Советская детская книга /Children`s literature</h2>
-                    <p class="pb-25 text-center celu3">Мир советского ребенка вопреки идеологическим установкам был наполнен множеством красочных и ярких впечатлений, созданных благодаря талантливым писателям и иллюстраторам.</p>
+                    <h1 class="h1-index">The Ljuba's library</h1>
+                     
+                    <p class="pb-25 text-center ">Мир советского ребенка вопреки идеологическим установкам был наполнен множеством красочных и ярких впечатлений, созданных благодаря талантливым писателям и иллюстраторам.</p>
                     <div>
                         <a href="indexslid2.html" class="btn btn-danger px-5 celu3">Leer más</a>
                     </div>    
@@ -234,7 +229,7 @@
         <!--FIIIN seccion 1-->
         <section>
         
-    <div class="mapa mr-2" > <p  >Tell me where are you from and answer our web question</p> </div>
+    <div class="mapa mr-2" ><h4 >Answer our web question</h4> </div> 
        
         
         
@@ -325,16 +320,10 @@
      <script>
     window.sr =ScrollReveal();
          sr.reveal('.navbar', {
-             
-             duration:2000,
+              duration:2000,
              origin: 'bottom'
          });
-           sr.reveal('.celu2', {
-             
-             duration:2000,
-             origin: 'top',
-               distance: '300px'
-         });
+         
              sr.reveal('.fondo-2 .container', {
              duration:3000,
              origin: 'left',
@@ -350,23 +339,27 @@
              sr.reveal('.mapa p', {
              duration:4000,
              origin: 'right',
-               delay: 2000,
+               delay: 1000,
                viewFactor: 0.2
          });
         
           sr.reveal('.cuadro1', {
-             duration:2000,
+             duration:3000,
              origin: 'right',
-               distance: '300px',
+               distance: '50px',
                viewFactor: 0.2
          });
           sr.reveal('.cuadro2', {
              duration:3000,
              origin: 'left',
-               distance: '300px',
+               distance: '100px',
                viewFactor: 0.2
          });
-         
+           sr.reveal('.celu2', {
+               duration:2000,
+             origin: 'top',
+               distance: '300px'
+         });
           sr.reveal('iframe', {
              duration:3000,
              origin: 'left',

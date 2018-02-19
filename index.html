@@ -38,6 +38,12 @@
                 }
             
             @media (max-width: 767px){
+                .celu11{
+                    display: block;
+                    margin-top: 4px;
+                   
+                     
+                }
                 .mapa p{
                     padding-bottom:  20px;
                 }
@@ -69,7 +75,7 @@
   position: absolute;
     top: 0px;
     right: 0;
-    bottom: 365px;
+    bottom: 340px;
     left: 0;
     margin: auto;  
 } /*fin centrado absoluto*/
@@ -174,8 +180,8 @@
         <div class="container-fluid">
             
            <div class="container text-center"><br>
-             <p class="h1 mt-2 text-primary "><strong>Get into the book galery</strong>
-               <a href="bookSections/galeria.html" class="btn btn-success px-2 ml-2">See more</a>
+             <p class="h1 mt-2 text-primary anim11"><strong>Get into the book galery</strong>
+               <a href="bookSections/galeria.html" class="btn btn-success px-2 ml-2 celu11">See more</a>
               </p><hr><br><br>
                
                 <div class="row align-items-center py-1 cuadro cuadro1" >
@@ -370,6 +376,18 @@
              duration:2000,
              origin: 'bottom',
                distance: '300px' 
+          });
+         
+          sr.reveal('.anim11', {
+             duration:1000,
+             origin: 'left',
+               distance: '200px' 
+          });
+          sr.reveal('.celu11', {
+              delay:1000,
+             duration:1000,
+             origin: 'right',
+               distance: '-900px' 
           });
     </script>
 

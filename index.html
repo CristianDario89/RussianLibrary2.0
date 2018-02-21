@@ -38,13 +38,17 @@
                 }
             
             @media (max-width: 767px){
+                .titu-nav{
+                   margin-right: 60px;
+                }
+                .mapa h4{
+                  display: none;
+                }
                  .celu11{
                     display: block;
                     margin-top: 4px;
                  }
-                .mapa p{
-                    padding-bottom:  20px;
-                }
+             
                  .titulazo{
                     width: 100%;
                     margin-left: -8px;
@@ -71,6 +75,7 @@
     bottom: 310px;
     left: 0;
     margin: auto;  
+                  
 } /*fin centrado absoluto*/
 
 .mapa{
@@ -86,14 +91,31 @@
     
     -webkit-animation: tierra-girando 15s infinite linear; /*linear pa q gire permanentemente*/
     }
+             .mapa .text-form-celu{
+                      display:  block;
+                 font-family: 'Roboto', sans-serif;
+                 font-size: 13px;
+                 margin-top: 18px;
+                 text-align: center;
+                 color: white;
+              }
+                
     }
             
             /**/
             .mapa h4{
-              font-size: 14px;
-                margin-top: 22px;
+              font-size: 21px;
+               font-family: 'Roboto', sans-serif;
+                margin-top: 38px;
                 text-align: center;
                 cursor: pointer;
+            }
+            .mapa a{
+                color: green;
+                text-decoration: none;
+             }
+            .text-form-celu{
+                display: none;
             }
         </style>
         
@@ -227,8 +249,11 @@
 
         <!--FIIIN seccion 1-->
         <section>
-        
-    <div class="mapa mr-2" ><h4 ><a href="form.html" style="text-decoration: none; color: darkgreen;" class="h5"> <strong>Answer<br> our web question</strong></a></h4> </div> 
+    
+          
+    <div class="mapa mr-2"><h4> <a href="form.html" class="celu-txt-map">Answer our web question</a></h4> 
+       <div class="text-form-celu">Answer our web question</div> 
+      </div> 
        
         
         

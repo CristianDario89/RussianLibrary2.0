@@ -41,7 +41,15 @@
                 }
             
             @media (max-width: 767px){
-                  
+                   #cardfan  img{
+                         width: 150px;
+                    height:  190px;
+                       position: absolute;
+                       bottom: 30px;
+                       left: 110px;
+                 }
+                .container ul{margin-top: 240px;}
+                 
                 .celu6{
                     margin-top: 140px;
                 }
@@ -86,7 +94,11 @@
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             grid-gap: 5px;
                          padding: 20px;
+                         margin-top: 20px;
+                          box-shadow: 0px 0px 40px blue, 0px 0px 80px rgba(256,256,256 ,1);
         }
+            
+             
         .main2 img{
             display: block;
             width: 100%;
@@ -94,7 +106,7 @@
             box-shadow: -1px 10px 0px rgba(0,0,0,0.06);
             border: 3px solid 
         }
-
+           
         </style>
          
         <script src="JQuery/jquery-3.2.1.min.js"></script>
@@ -113,33 +125,35 @@
         </script>
     </head>
 <body>
-<div>
-   
+  
         <!--Navbar-->
 
         <div class="container-fluid navbar-inverse fondo-nav fixed-top">
 
 
             <nav class="navbar navbar-toggleable-md  container">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-toggler-right celu3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand text-muted text1" href="index.html">
-                    <img src="" width="30" height="30" class="d-inline-block  align-top mr-1" alt="">Majorova collections</a>
+                <a class="navbar-brand text-muted" href="index.html">
+                    <img src="" width="30" height="30" class="d-inline-block  align-top titu-nav" alt="">Majorova collections</a>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto ">
                          <li class="nav-item">
-                            <a class="nav-link text-muted" href="bookSections/galeria.html">Galery</a>
+                            <a class="nav-link text-muted galery" href="bookSections/galeria.html">Galery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-muted" href="#">Who I am</a>
+                            <a class="nav-link text-muted who" href="#">Who I am</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-muted" href="#">My work</a>
+                            <a class="nav-link text-muted work" href="indexslid2.html">My work</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link text-muted kids" href="#kids">Kids</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-muted" href="#">Contact</a>
+                            <a class="nav-link text-muted contact" href="#form-anim">Contact</a>
                         </li>
                     </ul>
 
@@ -165,7 +179,6 @@
             </div>
         </div>
        
-       
         <!--fin Slider-->
 	   <main class="main2">
         <img src="img/2/1.jpg" alt="">
@@ -186,7 +199,7 @@
            <img src="img/2/1c.jpg" alt="">
     </main>
    
-    <div class="container ">
+    <div class="container">
 	     <ul id="c">
 	         <li><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, error. Saepe quos voluptate consequatur enim odio amet placeat accusantium dicta ex, fugiat reiciendis dolor, blanditiis nihil dolores debitis ducimus pariatur!</div>
 	         <div>A officiis in maxime minima voluptate incidunt labore quis quaerat dolor eum tenetur facere sed nobis, vero voluptatibus fugit natus distinctio eligendi omnis dicta veritatis! Laboriosam maiores molestias nobis ducimus!</div>
@@ -227,9 +240,7 @@
             </div>
         </div>
         <!--FIIIIIIIIIN  Banner-->
-  
-       
-
+   
         <!--footer-->
         <footer class="container-fluid bg-inverse text-center text-white py-5">
             <p>Sitio web desarrolado por Cristian Dario<br><strong>https://github.com/CristianDario89</strong></p>

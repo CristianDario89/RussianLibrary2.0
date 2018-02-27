@@ -2,6 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Manuale:400,500');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
+@font-face {
+  font-family: 'Malvinas';
+  src:  url('../fonts/fonts5/Malvinas.eot?m1b4ny');
+  src:  url('../fonts/fonts5/Malvinas.eot?m1b4ny#iefix') format('embedded-opentype'),
+    url('../fonts/fonts5/Malvinas.ttf?m1b4ny') format('truetype'),
+    url('../fonts/fonts5/Malvinas.woff?m1b4ny') format('woff'),
+    url('../fonts/fonts5/Malvinas.svg?m1b4ny#Malvinas') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body{font-family: 'Roboto', sans-serif; margin: 0; }
 
 
@@ -172,4 +184,29 @@ h1 .link-ppal{
 }
 .form{
     box-shadow: 0px 0px 40px blue, 0px 0px 80px rgba(256,256,256 ,1); 
+}
+
+/*icons nav*/
+
+
+.kids:before {
+  content: "\e900";
+      font-family: 'Malvinas';
+    margin-right: 3px;
+}
+.galery:before {
+  content: "\e90e";
+     font-family: 'Malvinas';margin-right: 3px;
+}
+.who:before {
+  content: "\e971";
+      font-family: 'Malvinas';margin-right: 3px;
+}
+.work:before {
+  content: "\e9ae";
+      font-family: 'Malvinas';margin-right: 3px;
+}
+.contact:before {
+  content: "\ea83";
+      font-family: 'Malvinas';margin-right: 3px;
 }

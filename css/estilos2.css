@@ -192,21 +192,22 @@ h1 .link-ppal{
 .kids:before {
   content: "\e900";
       font-family: 'Malvinas';
-    margin-right: 3px;
+    margin-right: 17px;
+    
 }
 .galery:before {
   content: "\e90e";
-     font-family: 'Malvinas';margin-right: 3px;
+     font-family: 'Malvinas';margin-right: 12px;
 }
 .who:before {
   content: "\e971";
-      font-family: 'Malvinas';margin-right: 3px;
+      font-family: 'Malvinas';margin-right: 12px;
 }
 .work:before {
   content: "\e9ae";
-      font-family: 'Malvinas';margin-right: 3px;
+      font-family: 'Malvinas';margin-right: 12px;
 }
 .contact:before {
   content: "\ea83";
-      font-family: 'Malvinas';margin-right: 3px;
+      font-family: 'Malvinas';margin-right: 12px;
 }
